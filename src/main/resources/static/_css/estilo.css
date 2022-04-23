@@ -1,0 +1,45 @@
+.bg-menu{
+    background-color: rgb(241, 245, 245);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-fluid{
+    background-color: rgba(0, 0, 0, 0.534);
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    
+}
+.box{
+    background-color: rgba(16, 8, 52, 0.733);
+    margin: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+.formulario{
+    background-color: rgba(16, 8, 52, 0.733);
+    margin: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+.Titulo1{
+    color: white;
+}
+
+
+body{
+    background-image: url(/_imagens/wp4676582-4k-pc-wallpapers.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+
+}

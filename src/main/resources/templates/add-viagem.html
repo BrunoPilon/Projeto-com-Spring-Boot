@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" lang="pt-BR">
+<head>
+<meta charset="ISO-8859-1">
+<title>Nova Viagem</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="/_css/estilo.css"/>
+
+</head>
+<body>
+	<nav class="navbar navbar-dark">
+        <a class="navbar-brand" href="/">
+          <img src="/_imagens/plane-departure-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          TravelNow
+        </a>
+      </nav>
+    <div class="container">
+        <div class="container-fluid">
+            <h1 class="Titulo1">Adicione o destino da sua viagem e uma nota de 0 a 10 para sua experiência</h1>
+            <h4> Muito obrigado por colaborar com nosso site!</h4>
+            </div>  
+        <div class="formulario">
+            <form th:action="@{/viagens/add}" th:object="${viagem}"
+                method="post">
+                <label>Destino:</label> 
+                <input type="text" th:field="*{destino}">
+                <br>
+                <label>Nota:</label> <br><input type="text" th:field="*{nota}">
+                <input type="submit" value="Adicionar" >
+            </form>
+        </div>
+    <div>
+</body>
+</html>
